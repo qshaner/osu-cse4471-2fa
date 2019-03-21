@@ -1,15 +1,15 @@
 .authenticated {
-    background-color: lightblue;
+    background-color: #B8DAFF;
 }
 
 .mainContainer {
-    background-color: lightcoral;
+    background-color: #FFCCD0;
 }
 
 .login {
-    background-color: lightgrey;
+    background-color: #FF999B;
 }
 
 .duo {
-    background-color: lightyellow;
+    background-color: #E4B8FF;
 }

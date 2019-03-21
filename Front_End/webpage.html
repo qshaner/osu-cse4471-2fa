@@ -1,21 +1,30 @@
-<html>
+<!DOCTYPE html>
     <head>
-        <link rel="stylesheet" type="text/css" href="project.css">
-        <link rel="stylesheet" type="text/css" href="Duo-Frame.css">
-        <title>2 Factor Authentication</title>
+        <link rel="stylesheet" href="project.css">
     </head>
     <body>
-       <h1>Login: </h1>
-       <div className="mainContainer">
-            This is where a login prompt will be
-            <div className="login">
+       <div class="mainContainer">
+           
+           <form>
+           <h1>Login</h1>
+               Username: <br>
+               <input type="text" name="login"><br>
+               Password: <br>
+               <input type="password" name="password">
+               <input type="submit" value="Submit">
+           </form>
+           
+            <div class="login">
+                <script>
+                //This will be for the login calls, register OnClick event
+                </script>
                 this will initially be hidden, will use DOM elements to toggle show and hidden
                 between this and the login prompt, and to trigger a switch b/n success/failure screens
             <script> //gotta register the button for 'onClick'
             // it will pull up the duo authentication frame
             
             /* DUO AUTH: 
-            <div className="duo">
+            <div class="duo">
             <iframe id=duo_iframe"
             title="Login to the System"
             frameborder="0"
@@ -26,9 +35,10 @@
 
             //After GET returns a success, show a 'Success!' screen, otherwise show a 
             //'Not Authenticated' screen
-            
              </script>
-             <div className="authenticated"></div>
+           </div>
+             <div class="authenticated">
+                <p>this is where the authentication spot will be </p>
              </div>
        </div>
     </body>
