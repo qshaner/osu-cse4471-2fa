@@ -1,0 +1,15 @@
+.authenticated {
+    background-color: lightblue;
+}
+
+.mainContainer {
+    background-color: lightcoral;
+}
+
+.login {
+    background-color: lightgrey;
+}
+
+.duo {
+    background-color: lightyellow;
+}
