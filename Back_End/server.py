@@ -1,10 +1,11 @@
 import SocketServer as socketserver
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 import SimpleHTTPServer
+from flask import Flask
+
 
 PORT = 8080
 Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
-
 
 #class Handler():
     # with socketserver.TCPServer(("", PORT), Handler) as httpd:
@@ -18,3 +19,6 @@ httpd.host = "api-7ab09f67.duosecurity.com"
 print("serving at port", PORT)
 print("Httpd ",httpd.host)
 httpd.serve_forever()
+
+app = Flask(__name__)
+app.route('/')
